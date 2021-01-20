@@ -115,7 +115,7 @@
 										<option>Yo'q</option>
 									</select>
 								</div>
-
+asdasdasdasdasdasdasd
 								<div class="mb-3">
 									<input type="text" class="form-control" placeholder="Tugilgan joyi" name='mestoroj' required>
 								</div>
