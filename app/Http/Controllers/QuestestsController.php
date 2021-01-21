@@ -43,7 +43,7 @@ class QuestestsController extends Controller
         }
 
         return view('quiztest',[
-            'answer_count' => 'Siz testning q', 
+            'answer_count' => 'ooo chumo qmashenniklik qmoqchi boldingmi blyat', 
             'questests'=> $questests,
             'idvacancies' => $id
         ]);
