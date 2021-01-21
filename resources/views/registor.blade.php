@@ -1,18 +1,5 @@
 @extends('layouts.botstraplayout')
 
-	<script>
-		$(document).ready(	function () 
-			{
-				/* When click New customer button */
-				$('#new-customer').click(function () {
-				$('#btn-save').val("create-customer");
-				$('#customer').trigger("reset");
-				$('#customerCrudModal').html("Add New Customer");
-				$('#crud-modal').modal('show');
-				});
-			});
-	</script>
-
 @section('glavmenu')
 			
 		<section id="about" class="about">
@@ -53,10 +40,28 @@
 					@endforeach	
 				</ul>
 				</div>
+				
+
+				<p>
+					<div class="container">
+						<div class="container">
+							<div class="container">
+								<div class="form-check mb-2 fw-bold" data-aos="fade-up" id="cheks1" data-aos-delay="150" >
+									<input  class="form-check-input" type="checkbox"  onchange="document.getElementById('testbutton').disabled = !this.checked;" />
+									<label class="form-check-label" for="flexCheckDefault">
+									  Barcha majburiyat va shartlarga rozilik bildirish !
+									</label>
+								  </div>
+							</div>							
+						</div>						
+					</div>
+				</p>
+				
+				
 
 				<form class="text-center" data-aos="fade-up" >
 						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Orqaga qaytish</button>				
-						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Ma'lumotlarni to'ldirish </button>
+						<button type="button" id="testbutton" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" disabled="disabled">Ma'lumotlarni to'ldirish </button>
 				</form>
 			
 			</div>
@@ -115,7 +120,7 @@
 										<option>Yo'q</option>
 									</select>
 								</div>
-asdasdasdasdasdasdasd
+
 								<div class="mb-3">
 									<input type="text" class="form-control" placeholder="Tugilgan joyi" name='mestoroj' required>
 								</div>
@@ -125,11 +130,16 @@ asdasdasdasdasdasdasd
 								</div>
 
 								<div class="mb-3">
-									<input type="text" class="form-control" placeholder="pasport seriyasi" name='pass_seriya' required>
-								</div>
+									<div class="row">
+										<div class="col">
+											<input type="text" class="form-control" placeholder="Pasport seriyasi" name='pass_seriya' required>
+										</div>
+		
+										<div class="col">
+											<input class="form-control" type="tel"  placeholder="Pasport raqami " id="example-tel-input" name='pass_number' required>
+										</div>
+									</div>
 
-								<div class="mb-3">
-									<input class="form-control" type="tel"  placeholder="pasport raqami " id="example-tel-input" name='pass_number' required>
 								</div>
 
 								<div class="modal-footer">
