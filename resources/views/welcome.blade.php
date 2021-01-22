@@ -59,11 +59,11 @@
 			  <nav class="nav-menu d-none d-lg-block">
 				<ul>
 				  <li class="active"><a href="#/">Buxoro MTU UK</a></li>
-				  <li><a href="#about">About</a></li>
-				  <li><a href="#services">Services</a></li>
-				  <li><a href="#portfolio">Portfolio</a></li>
-				  <li><a href="#team">Team</a></li>
-				  <li><a href="#pricing">Pricing</a></li>
+				  <li><a href="#about">Xizmatlar</a></li>
+				  <li><a href="#services">Bo'limlar</a></li>
+				  <li><a href="#portfolio">Korxonalar</a></li>
+				  <li><a href="#team">Yangiliklar</a></li>
+				  <li><a href="#pricing">Foto Galireya</a></li>
 				  <li><a href="#contact">Contact</a></li>
 		
 				  <li class="get-started"><a href="/">Bosh saxifa</a></li>
@@ -89,19 +89,19 @@
 				<div class="container text-center">	
 					<div class="row">
 						<div class="col-lg-3 padding-tb-45px" data-aos="fade-up">
-							<h4><span class="font-2 font-weight-600" data-aos="fade-up">+200 </span></h4>
+							<h4><span class="font-2 font-weight-600" data-aos="fade-up">+7 </span></h4>
 							<span class="text-medium text-grey-2" data-aos="fade-up">Barcha vakansiyalar</span>
 						</div>
 						<div class="col-lg-3 padding-tb-45px" data-aos="fade-up">
-							<h4><span class="font-2 font-weight-600" data-aos="fade-up">+25 </span></h4>
+							<h4><span class="font-2 font-weight-600" data-aos="fade-up">+0 </span></h4>
 							<span class="text-medium text-grey-2" data-aos="fade-up"> Ariza topshirilgan vakasiyalar </span>
 						</div>
 						<div class="col-lg-3 padding-tb-45px" data-aos="fade-up">
-							<h4><span class="font-2 font-weight-600" data-aos="fade-up">+170 </span></h4>
+							<h4><span class="font-2 font-weight-600" data-aos="fade-up">+7 </span></h4>
 							<span class="text-medium text-grey-2" data-aos="fade-up">Ariza topshirilmagan vakansiyalar</span>
 						</div>
 						<div class="col-lg-3 padding-tb-45px" data-aos="fade-up">
-							<h4><span class="font-2 font-weight-600" data-aos="fade-up">+50 </span></h4>
+							<h4><span class="font-2 font-weight-600" data-aos="fade-up">+0 </span></h4>
 							<span class="text-medium text-grey-2" data-aos="fade-up">Statistika</span>
 						</div>
 					</div>

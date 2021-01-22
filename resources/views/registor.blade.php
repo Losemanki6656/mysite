@@ -2,72 +2,76 @@
 
 @section('glavmenu')
 			
-		<section id="about" class="about">
-			<div class="container">
+<div>
+	<section id="about" class="about">
+		<div class="container">
 
-			<div class="section-title" data-aos="fade-up">
-				<h2>Majburiyatlar</h2>
+		<div class="section-title" data-aos="fade-up">
+			<h2>Majburiyatlar</h2>
+		</div>
+
+		<div class="row content">
+			
+			<div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">
+			<ul>
+				@foreach ($responsarts as $res1)
+				<li><i class="ri-check-double-line"></i>  {{$res1->respon}} </li>
+				@endforeach	
+			</ul>
 			</div>
+			
+		</div>
 
-			<div class="row content">
-				
-				<div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">
-				<ul>
-					@foreach ($responsarts as $res1)
-					<li><i class="ri-check-double-line"></i>  {{$res1->respon}} </li>
-					@endforeach	
-				</ul>
-				</div>
-				
+		</div>
+	</section>
+
+	<section id="about" class="about">
+		<div class="container">
+
+		<div class="section-title" data-aos="fade-up">
+			<h2>Shartlar</h2>
+		</div>
+
+		<div class="row content">
+			
+			<div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">
+			<ul>
+				@foreach ($responworks as $res2)
+				<li><i class="ri-check-double-line"></i>  {{$res2->respon}} </li>
+				@endforeach	
+			</ul>
 			</div>
+			
 
-			</div>
-		</section>
-
-		<section id="about" class="about">
-			<div class="container">
-
-			<div class="section-title" data-aos="fade-up">
-				<h2>Shartlar</h2>
-			</div>
-
-			<div class="row content">
-				
-				<div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">
-				<ul>
-					@foreach ($responworks as $res2)
-					<li><i class="ri-check-double-line"></i>  {{$res2->respon}} </li>
-					@endforeach	
-				</ul>
-				</div>
-				
-
-				<p>
+			<p>
+				<div class="container">
 					<div class="container">
 						<div class="container">
-							<div class="container">
-								<div class="form-check mb-2 fw-bold" data-aos="fade-up" id="cheks1" data-aos-delay="150" >
-									<input  class="form-check-input" type="checkbox"  onchange="document.getElementById('testbutton').disabled = !this.checked;" />
-									<label class="form-check-label" for="flexCheckDefault">
-									  Barcha majburiyat va shartlarga rozilik bildirish !
-									</label>
-								  </div>
-							</div>							
-						</div>						
-					</div>
-				</p>
-				
-				
-
-				<form class="text-center" data-aos="fade-up" >
-						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Orqaga qaytish</button>				
-						<button type="button" id="testbutton" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" disabled="disabled">Ma'lumotlarni to'ldirish </button>
-				</form>
+							<div class="form-check mb-2 fw-bold" data-aos="fade-up" id="cheks1" data-aos-delay="150" >
+								<input  class="form-check-input" type="checkbox"  onchange="document.getElementById('testbutton').disabled = !this.checked;" />
+								<label class="form-check-label" for="flexCheckDefault">
+								  Barcha majburiyat va shartlarga rozilik bildirish !
+								</label>
+							  </div>
+						</div>							
+					</div>						
+				</div>
+			</p>
 			
-			</div>
+			
 
-			</div>
-		</section>
+			<form class="text-center" data-aos="fade-up" >
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Orqaga qaytish</button>				
+					<button type="button" id="testbutton" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" disabled="disabled">Ma'lumotlarni to'ldirish </button>
+			</form>
+		
+		</div>
+
+		</div>
+	</section>
+	
+</div>
+		
 
 		
 

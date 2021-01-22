@@ -50,6 +50,11 @@ class ResponsartController extends Controller
             $msg = 'Customer entry created successfully.';
         else
             $msg = 'Customer data is updated successfully';
-        return redirect()->route('questest', ['id' => $request->idvacan])->with('success',$msg)->with('state_id', $state->id); 
+
+            return view('result',[
+                'state'=> $state
+            ]);
+      
+      //      return redirect()->route('questest', ['id' => $request->idvacan])->with('success',$msg)->with('state_id', $state->id); 
     }
 }

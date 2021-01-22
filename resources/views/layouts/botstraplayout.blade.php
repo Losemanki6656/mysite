@@ -97,11 +97,9 @@
     
   </div>
 </main>
-<div class="container">
   
   @yield('glavmenu')
   
-</div>
 
 
 <footer class="footer mt-auto py-3 bg-light">

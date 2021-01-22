@@ -25,8 +25,4 @@ Route::get('/questest/{id}', 'QuestestsController@index')->name('questest');
 //Route::resource('','StateController');
 
 
-Route::get('/registor/tests/a', function() 
-{
-return view('clienttest');
-}
-);
+Route::get('/registor/tests/a', 'StateController@index')->name('state');

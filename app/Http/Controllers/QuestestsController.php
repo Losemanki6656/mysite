@@ -35,15 +35,15 @@ class QuestestsController extends Controller
             $state->ans_cout = $answer_count;
             $state->save();
     
-            return view('quiztest',[
-                'answer_count' => $answer_count,
+            return view('result',[
+                'answer_count' =>$answer_count ,
                 'questests'=> $questests,
                 'idvacancies' => $id
             ]);
         }
 
-        return view('quiztest',[
-            'answer_count' => 'ooo chumo qmashenniklik qmoqchi boldingmi blyat', 
+        return view('resulterror',[
+            'answer_count' => 'Siz testning qonun qoidalarini buzdingiz! Sizning arizangiz qabul qilinmaydi!', 
             'questests'=> $questests,
             'idvacancies' => $id
         ]);
